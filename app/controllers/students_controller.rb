@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @student = Student.new
+    @student = Student.new(params[:student])
     @student.save
     # binding.pry
     redirect_to student_path(@student)
