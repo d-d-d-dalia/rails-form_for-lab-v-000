@@ -5,7 +5,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def new
-    @school_class = SchoolClass.new(params[:school_class])
+    @school_class = SchoolClass.new
   end
 
   def create
